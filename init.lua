@@ -61,3 +61,10 @@ vim.opt.relativenumber = false
 vim.opt.termguicolors = true
 vim.opt.mouse=""
 vim.opt.clipboard="unnamedplus"
+vim.keymap.set('n', '<C-f>', '/');
+vim.keymap.set('v', '<C-f>', '/');
+-- Search and replace the word under the cursor
+vim.keymap.set("n", "<C-r>", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.expandtab = true
